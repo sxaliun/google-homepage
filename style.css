@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* css Document */
+
+body {
+    background-color: #ffffff;
+    font-family: sans-serif;
+    width: 98%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.navbar ul{
+    margin: 3px;
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.navbar ul li a {
+    padding: 3px;
+    display: inline;
+}
+
+.navbar .normal {
+    color: gray;
+    display: inline-block;
+}
+
+.navbar .navimg {
+    display: inline-block;
+}
+
+ul a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+.navbar .navimg :hover {
+    background-color: rgb(187, 186, 186);
+}
+
+img {
+    width: 220px;
+}
+
+.logo {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.searchsection {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+input {
+    color: #d0d6db;
+    border-radius: 25px;
+    border: solid;
+    border-width: 1px;
+    padding-top: 12px;
+    padding-left: 10px;
+    width: 30rem;
+    height: 45px;
+    margin: 20px;
+}
+
+button {
+    background-color: #F8F9FA;
+    border: none;
+    height: 40px;
+    font-size: ;
+    color: #202124;
+    margin-right: 3px;
+    margin-bottom: 20px;
+}
+
+footer {
+    position: fixed;
+    display: flex;
+    background-color: #F2F2F2;
+    color: #6F6F6F;
+    width: 100%;
+    padding-left: 30px;
+    bottom: 0px;
+    text-decoration: none;
+}
+
+footer .upper-footer {
+    display: block;
+    width: 100%;
+    text-align: left;
+    height: 3rem;
+    border-block: 1px solid #d0d6db;
+    writing-mode: horizontal-tb;
+    border-top: none;
+}
+
+footer .lower-footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: stretch;
+    list-style-type: none;
+    display: block;
+}
+
+footer .lower-footer ul li {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+footer .lower-footer ul .apart {
+    grid-column: 1/3;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer .lower-footer ul .bpart {
+    grid-column: 3/4;
+    flex-direction: column;
+    align-items: flex-end;
+}
