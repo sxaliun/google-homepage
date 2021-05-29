@@ -5,7 +5,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: arial, sans-serif;
 }
 
 header {
@@ -68,7 +68,7 @@ header {
     width: 28px;
     border-radius: 50px;
 }
-  
+
 .navlink a:hover {
    text-decoration: underline;
 }
@@ -83,6 +83,10 @@ header {
 
 img {
     width: 220px;
+}
+
+.focus {
+    padding: 20px;
 }
 
 .logo {
@@ -117,19 +121,25 @@ input:hover {
     cursor:text;
     border:none;
     box-shadow: 0 1px 4px 1px #bebebeb7;
-
+    
 }
 
 button {
     background-color: #F8F9FA;
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     height: 30px;
     margin-top: 20px;
     font-size: 11px;
     color: #202124;
     padding: 10px 10px;
     width: auto;
+    margin-left: 5px;
+}
+
+.search-button {
+    margin-left: 75px;
+    
 }
 
 button:hover {
@@ -144,6 +154,7 @@ footer {
     padding-left: 30px;
     bottom: 0px;
     text-decoration: none;
+    font-size: 12px;
 }
 
 footer .footerA a {
@@ -151,9 +162,25 @@ footer .footerA a {
     list-style-type: none;
     color: #6F6F6F;
     display: flex;
-    flex-direction: row;
+
+}
+
+.footerA .apart {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 2.5rem;
+}
+
+.footerA .apart a{
+    padding: 5px;
+    margin-right: 15px;
 }
 
 footer .footerA a:hover {
     text-decoration: underline;
+}
+
+.push {
+    margin-left: auto;
 }
