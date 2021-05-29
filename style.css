@@ -115,11 +115,16 @@ input {
     height: 44px;
 }
 
-input:hover {
+input:hover, input:focus {
     cursor:text;
     border:none;
     box-shadow: 0 1px 4px 1px #bebebeb7;
-    
+    outline: none;
+}
+
+textarea {
+    max-width: 450px;
+    min-width: 300px;
 }
 
 button {
