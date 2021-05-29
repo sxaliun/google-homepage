@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="reset.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>Google Homepage</title>
 </head>
 <body>
@@ -13,48 +15,45 @@
         <header>
             <nav class="navbar">
                 <ul>
-                    <div class="normal">
+                    <div class="navlink">
                         <li><a href="#">Gmail</a></li>
                         <li><a href="#">Images</a></li>
                     </div>
-                    <div class="navimg">
-                        <li><a class="dropmenu" href="#">Menu</a></li>
-                        <li><a class="profile" href="#">Profile</a></li>
-                    </div>                    
                 </ul>
+                    <div class="navbtn">
+                        <a href="#"><button class="apps"><span class="material-icons">apps</span></button></a>
+                        <a href="#"><button class="account">
+                        <img class="name" src="/imgs/accbtn.png" alt="NameLttr">
+                        </button></a>
+                    </div>                    
             </nav>        
         </header>
-        </div>
-       <div class="logo">
-           <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo">       
-       </div>
-        <div class="searchsection">
-            <form action="#">
-                <input type="text" name="search">
-                <div class="search-button">
-                    <button> Google Search</button>
-                    <button> I'm Feeling Lucky</button>
-                </div>
-                <div> Google offered in: </div>
-            </form>
+    </div>
+        <div class="focus">
+            <div class="logo">
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo">       
+            </div>
+             <div class="searchsection">
+                 <form action="search">
+                     <input type="text" name="search">
+                     <div class="search-button">
+                         <button> Google Search</button>
+                         <button> I'm Feeling Lucky</button>
+                     </div>
+                 </form>
+             </div>
         </div>
         <div class="footer">
             <footer>
-                <div class="upper-footer">
-                    <a href="">Location</a>
-                </div>
-                <div class="lower-footer">
+                <div class="footerA">
                     <ul>
                         <div class="apart">
-                            <li >About</li>
-                            <li>Advertising</li>
-                            <li>Business</li>
-                            <li>How Search works</li>
-                        </div>
-                        <div class="bpart">
-                            <li>Privacy</li>
-                            <li>Terms</li>
-                            <li>Settings</li>
+                            <a href="#"><li>About</li></a>
+                            <a href="#"><li>Advertising</li></a>
+                            <a href="#"><li>How Search works</li></a>
+                            <a href="#"><li>Privacy</li></a>
+                            <a href="#"><li>Terms</li></a>
+                            <a href="#"><li>Settings</li></a>
                         </div>
                     </ul>
                 </div>

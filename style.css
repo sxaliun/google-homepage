@@ -1,52 +1,84 @@
 @charset "UTF-8";
 /* css Document */
 
-body {
-    background-color: #ffffff;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
-    width: 98%;
 }
 
-a {
-    text-decoration: none;
+header {
+    width: 100%;
+    height: 3rem;
+    background-color: teal;
 }
 
 .navbar {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 6px;
 }
 
-.navbar ul{
-    margin: 3px;
-    padding: 0px;
-    list-style-type: none;
+.navbar a {
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+}
+
+.navlink {
     display: flex;
+    justify-content: space-between;
+    width: 6rem;
+    height: 35px;
+    font-size: 12px;
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 12px;
+    background-color: tomato;
     align-items: center;
-    color: gray;
 }
 
-.navbar ul li a {
-    padding: 3px;
-    display: inline;
+.navbtn {
+    display: flex;
+    background-color: lightcoral;
+    height: 35px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.navbar .normal {
-    color: gray;
-    display: inline-block;
+.navbtn .apps {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50px;
+    background-color: transparent;
+}
+  
+.navbtn .account {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50px;
+    background-color: transparent;
 }
 
-.navbar .navimg {
-    display: inline-block;
+.navbtn img{
+    height: 28px;
+    width: 28px;
+    border-radius: 50px;
+}
+  
+.navlink a:hover {
+   text-decoration: underline;
+}
+  
+.apps:hover {
+    background-color: aliceblue;
 }
 
-ul a:hover {
-    color: purple;
-    text-decoration: underline;
-}
-
-.navbar .navimg :hover {
-    background-color: rgb(187, 186, 186);
+.account:hover {
+    background-color: aliceblue;
 }
 
 img {
@@ -54,87 +86,74 @@ img {
 }
 
 .logo {
-    margin-top: 5rem;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 198px;
+    min-height: 92px;
+    max-height: 290px;
 }
 
 .searchsection {
     display: flex;
     flex-direction: row;
-    text-align: center;
+    align-items: center;
     justify-content: center;
 }
 
 input {
-    color: #d0d6db;
-    border-radius: 25px;
+    color: #dfe1e5;
+    border-radius: 24px;
     border: solid;
     border-width: 1px;
-    padding-top: 12px;
-    padding-left: 10px;
-    width: 30rem;
-    height: 45px;
-    margin: 20px;
+    box-shadow: none;
+    width: auto;
+    max-width: 584px;
+    min-width: 362px;
+    height: 44px;
+}
+
+input:hover {
+    cursor:text;
+    border:none;
+    box-shadow: 0 1px 4px 1px #bebebeb7;
+
 }
 
 button {
     background-color: #F8F9FA;
     border: none;
-    height: 40px;
-    font-size: ;
+    border-radius: 3px;
+    height: 30px;
+    margin-top: 20px;
+    font-size: 11px;
     color: #202124;
-    margin-right: 3px;
-    margin-bottom: 20px;
+    padding: 10px 10px;
+    width: auto;
+}
+
+button:hover {
+    box-shadow: 0 1px 4px 1px #bebebeb7;
+    cursor: pointer;
 }
 
 footer {
     position: fixed;
-    display: flex;
     background-color: #F2F2F2;
-    color: #6F6F6F;
     width: 100%;
     padding-left: 30px;
     bottom: 0px;
     text-decoration: none;
 }
 
-footer .upper-footer {
-    display: block;
-    width: 100%;
-    text-align: left;
-    height: 3rem;
-    border-block: 1px solid #d0d6db;
-    writing-mode: horizontal-tb;
-    border-top: none;
-}
-
-footer .lower-footer {
+footer .footerA a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #6F6F6F;
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: stretch;
-    list-style-type: none;
-    display: block;
+    flex-direction: row;
 }
 
-footer .lower-footer ul li {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    list-style-type: none;
-    display: inline-block;
-}
-
-footer .lower-footer ul .apart {
-    grid-column: 1/3;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-footer .lower-footer ul .bpart {
-    grid-column: 3/4;
-    flex-direction: column;
-    align-items: flex-end;
+footer .footerA a:hover {
+    text-decoration: underline;
 }
