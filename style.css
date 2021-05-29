@@ -34,12 +34,12 @@ header {
     text-decoration: none;
     list-style-type: none;
     margin-right: 12px;
-    background-color: tomato;
     align-items: center;
 }
 
 .navbtn {
     display: flex;
+    background-color: lightcoral;
     height: 35px;
     align-items: center;
     justify-content: space-evenly;
