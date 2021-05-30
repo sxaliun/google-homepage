@@ -16,7 +16,6 @@ body {
 
 header .navbar {
     width: 100%;
-    justify-content: right;
     height: 3rem;
 }
 
@@ -124,18 +123,12 @@ input {
     margin-top: 25px;
     padding-left: 40px;
     padding-right: 40px;
-    background-image: url(/imgs/mgnf.png);
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/000/439/746/small/Basic_Ui__28101_29.jpg);
     background-repeat: no-repeat;
     background-size: 18px;
     background-position-y: 14px;
     background-position-x: 13px;
 }
-
-background-image: url(/imgs/voice.png);
-background-repeat: no-repeat;
-background-size: 15px;
-background-position-x: 405px;
-background-position-y: 11px;
 
 input:hover, input:focus {
     cursor:text;
