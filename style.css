@@ -89,7 +89,7 @@ header .navbar {
 }
 
 img {
-    width: 220px;
+    width: 242px;
 }
 
 .focus {
@@ -107,19 +107,35 @@ img {
 .searchsection {
     display: flex;
     flex-direction: column;
-    width: 550px;
+    max-width: 700px;
+    min-width: 440px;
 }
 
 input {
-    display: flex;
     height: 44px;
-    color: #dfe1e5;
-    width: 100%;
+    color: #292929;
+    font-weight:lighter;
+    width: 93%;
     border: solid;
+    border-color: #dfe1e5;
     border-radius: 24px;
     border-width: 1px;
     box-shadow: none;
+    margin-top: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-image: url(/imgs/mgnf.png);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position-y: 14px;
+    background-position-x: 13px;
 }
+
+background-image: url(/imgs/voice.png);
+background-repeat: no-repeat;
+background-size: 15px;
+background-position-x: 405px;
+background-position-y: 11px;
 
 input:hover, input:focus {
     cursor:text;
@@ -128,9 +144,12 @@ input:hover, input:focus {
     outline: none;
 }
 
-textarea {
-    max-width: 450px;
-    min-width: 90%;
+#voice {
+    border: solid;
+}
+.vc {
+    width: 18px;
+    border: none;
 }
 
 .search-button {
@@ -172,7 +191,6 @@ footer .footerA a {
     list-style-type: none;
     color: #6F6F6F;
     display: flex;
-
 }
 
 .footerA .apart {
